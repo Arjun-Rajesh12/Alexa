@@ -13,6 +13,7 @@ import requests
 import random
 import os
 import youtube_dl
+from youtubesearchpython import SearchVideos
 from youtube_search import YoutubeSearch
 from pyrogram import Client, filters
 from pyrogram.types import (
