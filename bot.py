@@ -205,10 +205,7 @@ async def ytmusic(client, message: Message):
     pablo = await client.send_message(
         message.chat.id, f"`Getting From Youtube Servers. Please Wait.`"
     )
-    if not '':
-        await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
-        return
-
+   
     search = YoutubeSearch(query, max_results=1).to_dict()
     count += 1
     mi = search.result()
