@@ -200,7 +200,7 @@ def get_text(message: Message) -> [None, str]:
 
 @alexa.on_message(filters.command(["vsong", "video"]))
 async def ytmusic(client, message: Message):
-    urlissed = get_text(message)
+    query = ''
 
     pablo = await client.send_message(
         message.chat.id, f"`Getting {urlissed} From Youtube Servers. Please Wait.`"
@@ -209,7 +209,8 @@ async def ytmusic(client, message: Message):
         await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
         return
 
-    search = SearchVideos(f"{urlissed}", offset=1, mode="dict", max_results=1)
+    search = YoutubeSearch(query, max_results=1).to_dict()
+            count += 1
     mi = search.result()
     mio = mi["search_result"]
     mo = mio[0]["link"]
