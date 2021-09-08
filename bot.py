@@ -182,6 +182,18 @@ def a(client, message):
         os.remove(thumb_name)
     except Exception as e:
         print(e)
+# helpers
+def get_text(message: Message) -> [None, str]:
+    text_to_return = message.text
+    if message.text is None:
+        return None
+    if " " in text_to_return:
+        try:
+            return message.text.split(None, 1)[1]
+        except IndexError:
+            return None
+    else:
+        return None
 
 #new plugin test
 
