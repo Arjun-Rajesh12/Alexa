@@ -183,4 +183,4 @@ def a(client, message):
     except Exception as e:
         print(e)
 
-bin.run()
+alexa.run()
