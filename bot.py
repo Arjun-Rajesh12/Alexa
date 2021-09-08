@@ -206,8 +206,7 @@ async def ytmusic(client, message: Message):
         message.chat.id, f"`Getting From Youtube Servers. Please Wait.`"
     )
    
-    search = YoutubeSearch(query, max_results=1).to_dict()
-    count += 1
+    search = YoutubeSearch(query, max_results=1).to_dict()count += 1
     mi = search.result()
     mio = mi["search_result"]
     mo = mio[0]["link"]
