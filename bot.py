@@ -203,7 +203,7 @@ async def ytmusic(client, message: Message):
     query = ''
 
     pablo = await client.send_message(
-        message.chat.id, f"`Getting {query} From Youtube Servers. Please Wait.`"
+        message.chat.id, f"`Getting From Youtube Servers. Please Wait.`"
     )
     if not query:
         await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
@@ -254,7 +254,7 @@ async def ytmusic(client, message: Message):
         progress_args=(
             pablo,
             c_time,
-            f"`Uploading {query} Song From YouTube Music!`",
+            f"`Uploading  Song From YouTube Music!`",
             file_stark,
         ),
     )
