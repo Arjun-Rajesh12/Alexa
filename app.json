@@ -1,0 +1,24 @@
+{
+    "name": "Alexa",
+    "description": "you can download YouTube music through this bot.",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from my.telegram.org.",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get this value from my.telegram.org.",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Get this value by making a bot from @BotFather.",
+            "required": true
+        },
+        
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
