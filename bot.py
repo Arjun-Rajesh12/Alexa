@@ -44,7 +44,7 @@ HELP_MESSAGE ="**hello** {}, **I'm Alexa. I'm a music bot written in** __python_
 START_BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton("♻️ Creator", callback_data="creator"),InlineKeyboardButton("🌀 Souce code", url="https://github.com/Oxidisedman/Alexa")],[InlineKeyboardButton("🙄help", callback_data="help"),InlineKeyboardButton("devloper", url="https://t.me/Oxidisedman")],[InlineKeyboardButton("🎭Updates", url="https://t.me/tg_kid")]])
 HELP_TEXT ="🙄എന്തിനോ വേണ്ടി ഓടുന്ന ബോട്ട്"
 HELP_STICKER ="CAACAgUAAxkBAAFIXnZhLFpHWPsw0DiXDhIF2PMpwwQXWAACwQQAAtpZTQ8SQOsZYGo9wyAE"
-ABOUT_STRING ="**hello** {}, **I'm Arina**. --> devloped by **__@Oxidisedman__**"
+ABOUT_STRING ="**hello** {}, **I'm Alexa**. --> devloped by **__@Oxidisedman__**"
 START_TEXT ="__please wait__"
 
 # filters
