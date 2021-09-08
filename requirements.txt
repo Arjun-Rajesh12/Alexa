@@ -5,3 +5,4 @@ youtube-dl
 requests
 youtube_search
 ffmpeg-python
+youtube_search_python
