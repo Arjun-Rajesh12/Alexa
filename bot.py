@@ -205,7 +205,7 @@ async def ytmusic(client, message: Message):
     pablo = await client.send_message(
         message.chat.id, f"`Getting From Youtube Servers. Please Wait.`"
     )
-    if not query:
+    if not '':
         await pablo.edit("Invalid Command Syntax, Please Check Help Menu To Know More!")
         return
 
